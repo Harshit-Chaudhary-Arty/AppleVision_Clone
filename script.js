@@ -59,10 +59,10 @@ gsap.to("#page1",{
 
 
 var tl = gsap.timeline({
-    opacity:"0",
+    // opacity:"0",
     scrollTrigger:{
         scroller:"#main",
-        trigger:".page",
+        trigger:"#page2",
         pin:true,
         scrub:1,
         markers:true,
@@ -71,6 +71,24 @@ var tl = gsap.timeline({
     }
 })
 
-tl.to(".page h1",{
+tl.to("#page2 h1",{
+    top:"-50%",
+})
+
+
+var tl2 = gsap.timeline({
+    // opacity:"0",
+    scrollTrigger:{
+        scroller:"#main",
+        trigger:"#page3",
+        pin:true,
+        scrub:1,
+        markers:true,
+        start:"top 0%",
+        end:"bottom top"
+    }
+})
+
+tl2.to("#page3 h1",{
     top:"-50%",
 })
