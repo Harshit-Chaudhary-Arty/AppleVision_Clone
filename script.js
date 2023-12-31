@@ -53,6 +53,24 @@ gsap.to("#page1",{
         pin:true,
         start:"top 0%",
         end:"bottom top",
-        markers:true
+        // markers:true
     }
+})
+
+
+var tl = gsap.timeline({
+    opacity:"0",
+    scrollTrigger:{
+        scroller:"#main",
+        trigger:".page",
+        pin:true,
+        scrub:1,
+        markers:true,
+        start:"top 0%",
+        end:"bottom top"
+    }
+})
+
+tl.to(".page h1",{
+    top:"-50%",
 })

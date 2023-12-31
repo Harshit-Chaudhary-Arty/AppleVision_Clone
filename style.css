@@ -20,11 +20,7 @@ main{
     overflow: hidden;
 }
 
-.page{
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
+
 
 .landing{
         position: relative;
@@ -92,15 +88,40 @@ main{
 }
 
 #page1  video{
-    /* width: 55%; */
+    /* width: 155%; */
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
     /* top: 0%; */
     z-index: 1;
-    height: 100%;
+    height: 140%;
 }
 
+.page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+.page video{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.page h1{
+    font-size: 6vh;
+    position: absolute;
+    z-index: 15;
+    transform: translatex(-50%);
+    left: 50%;
+    bottom: 5%;
+    white-space: nowrap;
+    color: white;
+    font-family: display;
+    text-align: center;
+}
 
 
 
