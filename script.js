@@ -33,62 +33,102 @@ function togethergsapscrolltrigger(){
 togethergsapscrolltrigger()
 
 
-gsap.to("#page1>video",{
-    scrollTrigger:{
-        // markers:true,
-        start:"top -2%",
-        end:"bottom top",
-        scroller:"#main",
-        trigger:"#page1>video",
-    },
-    onStart:()=>{
-        document.querySelector("#page1 video").play()
-    }
-})
+function timelinevid(){
+    gsap.to("#page1>video",{
+        scrollTrigger:{
+            // markers:true,
+            start:"top -2%",
+            end:"bottom top",
+            scroller:"#main",
+            trigger:"#page1>video",
+        },
+        onStart:()=>{
+            document.querySelector("#page1 video").play()
+        }
+    })
+    
+    gsap.to("#page1",{
+        scrollTrigger:{
+            scroller:"#main",
+            trigger:"#page1",
+            pin:true,
+            start:"top 0%",
+            end:"bottom top",
+            // markers:true
+        }
+    })
+    
+    
+    var tl = gsap.timeline({
+        // opacity:"0",
+        scrollTrigger:{
+            scroller:"#main",
+            trigger:"#page2",
+            pin:true,
+            scrub:1,
+            markers:true,
+            start:"top 0%",
+            end:"bottom top"
+        }
+    })
+    
+    tl.to("#page2 h1",{
+        top:"-50%",
+    })
+    
+    
+    var tl2 = gsap.timeline({
+        // opacity:"0",
+        scrollTrigger:{
+            scroller:"#main",
+            trigger:"#page3",
+            pin:true,
+            scrub:1,
+            markers:true,
+            start:"top 0%",
+            end:"bottom top"
+        }
+    })
+    
+    tl2.to("#page3 h1",{
+        top:"-50%",
+    })
+    
+    var tl3 = gsap.timeline({
+        scrollTrigger:{
+            scroller:"#main",
+            trigger:"#page4",
+            pin:true,
+            scrub:3,
+            markers:true,
+            start:"top 0%",
+            end:"bottom top"
+        }
+    })
+    
+    
+    
+    tl3.to("#page4 h1",{
+        top:"-50%",
+    })
+    
+    var tl3 = gsap.timeline({
+        scrollTrigger:{
+            scroller:"#main",
+            trigger:"#page5",
+            pin:true,
+            scrub:3,
+            markers:true,
+            start:"top 0%",
+            end:"bottom top"
+        }
+    })
+    
+    
+    
+    tl3.to("#page5 h1",{
+        top:"-50%",
+    })
 
-gsap.to("#page1",{
-    scrollTrigger:{
-        scroller:"#main",
-        trigger:"#page1",
-        pin:true,
-        start:"top 0%",
-        end:"bottom top",
-        // markers:true
-    }
-})
-
-
-var tl = gsap.timeline({
-    // opacity:"0",
-    scrollTrigger:{
-        scroller:"#main",
-        trigger:"#page2",
-        pin:true,
-        scrub:1,
-        markers:true,
-        start:"top 0%",
-        end:"bottom top"
-    }
-})
-
-tl.to("#page2 h1",{
-    top:"-50%",
-})
-
-
-var tl2 = gsap.timeline({
-    // opacity:"0",
-    scrollTrigger:{
-        scroller:"#main",
-        trigger:"#page3",
-        pin:true,
-        scrub:1,
-        markers:true,
-        start:"top 0%",
-        end:"bottom top"
-    }
-})
-
-tl2.to("#page3 h1",{
-    top:"-50%",
-})
+}
+timelinevid()
