@@ -121,7 +121,7 @@ function timelinevid(){
 
     })
     
-    var tl3 = gsap.timeline({
+    var tl4 = gsap.timeline({
         scrollTrigger:{
             scroller:"#main",
             trigger:"#page5",
@@ -135,7 +135,27 @@ function timelinevid(){
     
     
     
-    tl3.to("#page5 h1",{
+    tl4.to("#page5 h1",{
+        top:"-50%",
+        opacity:0.5,
+    })
+
+
+    var tl5 = gsap.timeline({
+        scrollTrigger:{
+            scroller:"#main",
+            trigger:"#page7",
+            pin:true,
+            scrub:3,
+            markers:true,
+            start:"top 0%",
+            end:"bottom top"
+        }
+    })
+    
+    
+    
+    tl5.to("#page7 h1",{
         top:"-50%",
         opacity:0.5,
     })
