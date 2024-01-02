@@ -73,8 +73,13 @@ function timelinevid(){
     })
     
     tl.to("#page2 h1",{
-        top:"-50%",
+        top:"-1%",
+        opacity:0.5,
     })
+
+    // tl.to("#page2 video",{
+    //     opacity:0
+    // })
     
     
     var tl2 = gsap.timeline({
@@ -92,6 +97,8 @@ function timelinevid(){
     
     tl2.to("#page3 h1",{
         top:"-50%",
+        opacity:0.5,
+
     })
     
     var tl3 = gsap.timeline({
@@ -110,6 +117,8 @@ function timelinevid(){
     
     tl3.to("#page4 h1",{
         top:"-50%",
+        opacity:0.5,
+
     })
     
     var tl3 = gsap.timeline({
@@ -128,6 +137,7 @@ function timelinevid(){
     
     tl3.to("#page5 h1",{
         top:"-50%",
+        opacity:0.5,
     })
 
 }

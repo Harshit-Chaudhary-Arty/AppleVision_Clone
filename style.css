@@ -124,38 +124,86 @@ main{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#page2{
-    background-color: aqua;
+#page6{
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    background-color: white;
+    font-family: display;
 }
+
+#section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:6% 0;
+}
+
+#details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: display;
+}
+
+#details img{
+    margin-bottom: 4%;
+}
+
+#details h2{
+    padding: 0.9% 0%;
+    font-family: display;
+}
+
+#h21{
+    color: #FF5A00;
+    font-size: 3.5vh;
+
+}
+
+#h22{
+    color:#86868B ;
+    font-size: 2.6vh;
+
+}
+
+#section button{
+    font-size: 2.6vh;
+    color: black;
+    font-family: display;
+    border-radius: 50px;
+    padding: 0.6% 2.5%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
