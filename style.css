@@ -125,7 +125,7 @@ main{
 }
 
 #page6{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     color: black;
     background-color: white;
@@ -147,7 +147,7 @@ main{
 }
 
 #details img{
-    margin-bottom: 4%;
+    margin: 7% 0%;
 }
 
 #details h2{
@@ -161,9 +161,14 @@ main{
 
 }
 
+#section img{
+    width: 52%;
+}
+
 #h22{
     color:#86868B ;
     font-size: 2.6vh;
+    margin-bottom: 7%;
 
 }
 
@@ -173,6 +178,13 @@ main{
     font-family: display;
     border-radius: 50px;
     padding: 0.6% 2.5%;
+
+}
+
+#section h1{
+    font-family: display;
+    font-size: 5.2vh;
+    margin-bottom: 5.8%;
 
 }
 
