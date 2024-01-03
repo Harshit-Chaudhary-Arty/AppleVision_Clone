@@ -312,32 +312,73 @@ h1,h2,h3{
     z-index: 15;
 }
 
-.subpageleft{
+.subpageleftb{
+    background-color: #F5F5F7;
+
     height: 100vh;
     width: 100vw;
     color: black;
-    z-index: 100;
-    /* position: relative; */
-    background-color: red;
+    z-index: 10;
+    position: relative;
+    /* background-color: red; */
 }
+
+.subpagerighta{
+    background-color: #F5F5F7;
+
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    z-index: 10;
+    position:relative;
+    /* background-color: rgb(255, 0, 157); */
+}
+
+
 .subpageleft p{
-    font-size: 1vmax;
+    font-size: 1.2vmax;
+    color: #86868B;
+}
+
+
+.subpageright p{
+    font-size: 1.2vmax;
+    color: #86868B; 
+}
+
+p{
+    font-family: display;
+}
+
+.subpageright h3{
+    font-size: 1.5vmax;
+    color: #1D1D1F;
+    display: inline;
+}
+
+.subpageleft h3{
+    font-size: 1.5vmax;
+    color: #1D1D1F;
+    display: inline;
 }
 
 .subpageright{
-    height: 100vh;
-    width: 100vw;
-    color: black;
-    z-index: 100;
-    /* position:relative; */
-    background-color: rgb(255, 0, 157);
-}
-.subpageright p{
-    font-size: 1vmax;
+    width: 20%;
+    position: absolute;
+    transform: translateX(100%);
+    top: 50%;
+    right: 25%;
+    /* background-color: blue; */
 }
 
+.subpageleft{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 50%;
+    left: 18%;
+    width: 20%;
 
-
+}
 
 
 
