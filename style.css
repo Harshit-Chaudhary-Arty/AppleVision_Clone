@@ -304,35 +304,37 @@ h1,h2,h3{
 
 #page10{
     background-color: #F5F5F7;
-    /* height: 100vh;
-    width: 100vw; */
+    height: 100vh;
+    width: 100vw;
 }
 
 #page10 canvas{
     z-index: 15;
 }
 
+.subpageleft{
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    z-index: 100;
+    /* position: relative; */
+    background-color: red;
+}
+.subpageleft p{
+    font-size: 1vmax;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.subpageright{
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    z-index: 100;
+    /* position:relative; */
+    background-color: rgb(255, 0, 157);
+}
+.subpageright p{
+    font-size: 1vmax;
+}
 
 
 

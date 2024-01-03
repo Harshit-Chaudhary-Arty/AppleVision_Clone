@@ -439,7 +439,7 @@ function scaleImage(img, ctx) {
 }
 ScrollTrigger.create({
 
-  trigger: "#page10>canvas",
+  trigger:"#page10 canvas",
   pin: true,
   // markers:true,
   scroller: `#main`,
