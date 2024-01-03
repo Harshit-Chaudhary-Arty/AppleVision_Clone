@@ -380,6 +380,27 @@ p{
 
 }
 
+#page11{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
 
+#page11 #left11{
+    height: 95%;
+    width: 40%;
+    background-image: url(pic1.jpg);
+    margin-left: 6%;
+}
+
+#page11 #right11{
+    height: 95%;
+    width: 40%;
+    background-image: url(pic2.jpg);
+    margin-right: 6%;
+}
 
 
