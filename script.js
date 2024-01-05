@@ -667,7 +667,7 @@ ScrollTrigger.create({
 
 trigger: "#page14 canvas",
 pin: true,
-markers:true,
+// markers:true,
 scroller: `#main`,
 //   set start end according to preference
 start: `top top`,

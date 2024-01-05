@@ -479,7 +479,7 @@ p{
     position: relative;
 }
 
-#page13p2{
+.infovis{
     width: 50%;
     height: 100%;
     display: flex;
@@ -491,22 +491,28 @@ p{
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
+    bottom: 0%;
 }
 
-#page13p2 h2{
+.infovis h2{
     font-size: 2vmax;
 
 }
-#page13p2 h1{
+.infovis h1{
     font-size: 4.5vmax;
 }
-#page13p2 p{
+.infovis p{
     font-size: 1.2vmax;
 }
 
 #page15{
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
+    background-color:black;
+    color: white;
+    position: relative;
+    margin-top: 80vh;
+
 }
 
 #page16{
