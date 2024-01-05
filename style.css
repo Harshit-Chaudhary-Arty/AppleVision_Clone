@@ -471,13 +471,38 @@ p{
     left: 50%;
 }
 
-#page13p2{
+#page14p1{
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     background-color: black;
+    color: white;
+    position: relative;
 }
 
-#page13p2 h2
+#page13p2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3% 0;
+    justify-content: space-evenly;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#page13p2 h2{
+    font-size: 2vmax;
+
+}
+#page13p2 h1{
+    font-size: 4.5vmax;
+}
+#page13p2 p{
+    font-size: 1.2vmax;
+}
 
 #page15{
     width: 100vw;
