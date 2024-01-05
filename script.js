@@ -451,8 +451,121 @@ ScrollTrigger.create({
 canvas();
 
 
-function canvas2(){
-    const canvas = document.querySelector("#page14 canvas");
+// function canvas2(){
+//     const canvas = document.querySelector("#page14 canvas");
+// const context = canvas.getContext("2d");
+
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
+
+
+// window.addEventListener("resize", function () {
+//   canvas.width = window.innerWidth;
+//   canvas.height = window.innerHeight;
+//   render();
+// });
+
+// function files(index) {
+//   var data = `
+//   .//Vision00001.png
+//   .//Apple vision canvas images/Vision00002.png
+//   .//Apple vision canvas images/Vision00003.png
+//   .//Apple vision canvas images/Vision00004.png
+//   .//Apple vision canvas images/Vision00005.png
+//   .//Apple vision canvas images/Vision00006.png
+//   .//Apple vision canvas images/Vision00007.png
+//   .//Apple vision canvas images/Vision00008.png
+//   .//Apple vision canvas images/Vision00009.png
+//   .//Apple vision canvas images/Vision00010.png
+//   .//Apple vision canvas images/Vision00011.png
+//   .//Apple vision canvas images/Vision00012.png
+//   .//Apple vision canvas images/Vision00013.png
+//   .//Apple vision canvas images/Vision00014.png
+//   .//Apple vision canvas images/Vision00015.png
+//   .//Apple vision canvas images/Vision00016.png
+//   .//Apple vision canvas images/Vision00017.png
+//   .//Apple vision canvas images/Vision00018.png
+//   .//Apple vision canvas images/Vision00019.png
+//   .//Apple vision canvas images/Vision00020.png
+//   .//Apple vision canvas images/Vision00021.png
+//   .//Apple vision canvas images/Vision00022.png
+//   .//Apple vision canvas images/Vision00023.png
+//   .//Apple vision canvas images/Vision00024.png
+//   .//Apple vision canvas images/Vision00025.png
+//  `;
+//   return data.split("\n")[index];
+// }
+
+// const frameCount = 25;
+
+// const images = [];
+// const imageSeq = {
+//   frame: 1,
+// };
+
+// for (let i = 0; i < frameCount; i++) {
+//   const img = new Image();
+//   img.src = files(i);
+//   images.push(img);
+// }
+
+// gsap.to(imageSeq, {
+//   frame: frameCount - 1,
+//   snap: "frame",
+//   ease: `none`,
+//   scrollTrigger: {
+//     scrub: 0.15,
+//     trigger: `#page14 canvas`,
+//     //   set start end according to preference
+//     start: `top top`,
+//     end: `600% top`,
+//     scroller: `#main`,
+//   },
+//   onUpdate: render,
+// });
+
+// images[1].onload = render;
+
+// function render() {
+//   scaleImage(images[imageSeq.frame], context);
+// }
+
+// function scaleImage(img, ctx) {
+//   var canvas = ctx.canvas;
+//   var hRatio = canvas.width / img.width;
+//   var vRatio = canvas.height / img.height;
+//   var ratio = Math.max(hRatio, vRatio);
+//   var centerShift_x = (canvas.width - img.width * ratio) / 2;
+//   var centerShift_y = (canvas.height - img.height * ratio) / 2;
+//   ctx.clearRect(0, 0, canvas.width, canvas.height);
+//   ctx.drawImage(
+//     img,
+//     0,
+//     0,
+//     img.width,
+//     img.height,
+//     centerShift_x,
+//     centerShift_y,
+//     img.width * ratio,
+//     img.height * ratio
+//   );
+// }
+// ScrollTrigger.create({
+
+//   trigger: "#page14 canvas",
+//   pin: true,
+//   // markers:true,
+//   scroller: `#main`,
+// //   set start end according to preference
+//   start: `top top`,
+//   end: `80% top`,
+// });
+// }
+
+// canvas2()
+
+function canvas1(){
+  const canvas = document.querySelector("#page14>canvas");
 const context = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -460,106 +573,105 @@ canvas.height = window.innerHeight;
 
 
 window.addEventListener("resize", function () {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  render();
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+render();
 });
 
 function files(index) {
-  var data = `
-  .//Apple vision canvas images/Vision00001.png
-  .//Apple vision canvas images/Vision00002.png
-  .//Apple vision canvas images/Vision00003.png
-  .//Apple vision canvas images/Vision00004.png
-  .//Apple vision canvas images/Vision00005.png
-  .//Apple vision canvas images/Vision00006.png
-  .//Apple vision canvas images/Vision00007.png
-  .//Apple vision canvas images/Vision00008.png
-  .//Apple vision canvas images/Vision00009.png
-  .//Apple vision canvas images/Vision00010.png
-  .//Apple vision canvas images/Vision00011.png
-  .//Apple vision canvas images/Vision00012.png
-  .//Apple vision canvas images/Vision00013.png
-  .//Apple vision canvas images/Vision00014.png
-  .//Apple vision canvas images/Vision00015.png
-  .//Apple vision canvas images/Vision00016.png
-  .//Apple vision canvas images/Vision00017.png
-  .//Apple vision canvas images/Vision00018.png
-  .//Apple vision canvas images/Vision00019.png
-  .//Apple vision canvas images/Vision00020.png
-  .//Apple vision canvas images/Vision00021.png
-  .//Apple vision canvas images/Vision00022.png
-  .//Apple vision canvas images/Vision00023.png
-  .//Apple vision canvas images/Vision00024.png
-  .//Apple vision canvas images/Vision00025.png
- `;
-  return data.split("\n")[index];
+var data = `
+.//Vision00001.png
+.//Vision00002.png
+.//Vision00003.png
+.//Vision00004.png
+.//Vision00005.png
+.//Vision00006.png
+.//Vision00007.png
+.//Vision00008.png
+.//Vision00009.png
+.//Vision00010.png
+.//Vision00011.png
+.//Vision00012.png
+.//Vision00013.png
+.//Vision00014.png
+.//Vision00015.png
+.//Vision00016.png
+.//Vision00017.png
+.//Vision00018.png
+.//Vision00019.png
+.//Vision00020.png
+.//Vision00021.png
+.//Vision00022.png
+.//Vision00023.png
+.//Vision00024.png
+.//Vision00025.png
+`;
+return data.split("\n")[index];
 }
 
 const frameCount = 25;
 
 const images = [];
 const imageSeq = {
-  frame: 1,
+frame: 1,
 };
 
 for (let i = 0; i < frameCount; i++) {
-  const img = new Image();
-  img.src = files(i);
-  images.push(img);
+const img = new Image();
+img.src = files(i);
+images.push(img);
 }
 
 gsap.to(imageSeq, {
-  frame: frameCount - 1,
-  snap: "frame",
-  ease: `none`,
-  scrollTrigger: {
-    scrub: 0.15,
-    trigger: `#page14 canvas`,
-    //   set start end according to preference
-    start: `top top`,
-    end: `600% top`,
-    scroller: `#main`,
-  },
-  onUpdate: render,
+frame: frameCount - 1,
+snap: "frame",
+ease: `none`,
+scrollTrigger: {
+  scrub: 0.15,
+  trigger: `#page14 canvas`,
+  //   set start end according to preference
+  start: `top top`,
+  end: `80% top`,
+  scroller: `#main`,
+},
+onUpdate: render,
 });
 
 images[1].onload = render;
 
 function render() {
-  scaleImage(images[imageSeq.frame], context);
+scaleImage(images[imageSeq.frame], context);
 }
 
 function scaleImage(img, ctx) {
-  var canvas = ctx.canvas;
-  var hRatio = canvas.width / img.width;
-  var vRatio = canvas.height / img.height;
-  var ratio = Math.max(hRatio, vRatio);
-  var centerShift_x = (canvas.width - img.width * ratio) / 2;
-  var centerShift_y = (canvas.height - img.height * ratio) / 2;
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.drawImage(
-    img,
-    0,
-    0,
-    img.width,
-    img.height,
-    centerShift_x,
-    centerShift_y,
-    img.width * ratio,
-    img.height * ratio
-  );
+var canvas = ctx.canvas;
+var hRatio = canvas.width / img.width;
+var vRatio = canvas.height / img.height;
+var ratio = Math.max(hRatio, vRatio);
+var centerShift_x = (canvas.width - img.width * ratio) / 2;
+var centerShift_y = (canvas.height - img.height * ratio) / 2;
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.drawImage(
+  img,
+  0,
+  0,
+  img.width,
+  img.height,
+  centerShift_x,
+  centerShift_y,
+  img.width * ratio,
+  img.height * ratio
+);
 }
 ScrollTrigger.create({
 
-  trigger: "#page14 canvas",
-  pin: true,
-  // markers:true,
-  scroller: `#main`,
+trigger: "#page14 canvas",
+pin: true,
+markers:true,
+scroller: `#main`,
 //   set start end according to preference
-  start: `top top`,
-  end: `80% top`,
+start: `top top`,
+end: `80% top`,
 });
 }
-
-canvas2()
+canvas1();
