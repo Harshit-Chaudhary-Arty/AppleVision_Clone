@@ -515,10 +515,7 @@ p{
 
 }
 
-#page16{
-    width: 100vw;
-    height: 100vh;
-}
+
 
 /*page pre 11*/
 #pre11{
@@ -590,4 +587,65 @@ p{
     top: 5%;
     height: 90%;
     /* width: 90vw; */
+}
+
+#page16{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#wrapper16{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 55vw;
+    transform: translateX(-50%);
+    left:50%;
+    text-align: center;
+    /* background-color: red; */
+    margin-top: 5%;
+    height: 70vh;
+}
+
+#wrapper16 h2{
+    font-size: 1.3vw;
+}
+
+#wrapper16 h1{
+    font-size: 4.5vw;
+}
+
+#wrapper16 p{
+    font-size: 1.2vw;
+    width: 70%;
+    font-weight: 600;
+    color: #86868B;
+}
+
+#wrapper16 button{
+    font-size: 2.6vh;
+    color: rgb(255, 255, 255);
+    font-family: display;
+    border-radius: 50px;
+    padding: 1.6% 2.5%;
+    background-color:#FF5A00;
+    border-style: none;
+    font-size: 1vmax;
+}
+#footer{
+    height: 20vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+#footer h2{
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    top: 30%;
 }
